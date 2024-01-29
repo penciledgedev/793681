@@ -35,6 +35,8 @@ app.use(errorHandler);
   process.on("unhandledRejection", (ex) => {
     console.log("WE GOT AN UNHANDLED REJECTION", ex);
   });
-require("./config/db")
 
-app.listen(PORT, console.log(`server is running on port ${PORT}, in ${process.env.NODE_ENV} mode`));
+// Export the 'app' instance for use in other modules
+module.exports = app;
+
+// Note: The app.listen() is not included here, as it will be called in db.js
