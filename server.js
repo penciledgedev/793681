@@ -38,5 +38,6 @@ app.use(errorHandler);
 
 // Export the 'app' instance for use in other modules
 module.exports = app;
+app.options('*', cors());
 
 // Note: The app.listen() is not included here, as it will be called in db.js
