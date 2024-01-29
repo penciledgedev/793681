@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{content.subject}}</title>
+  </head>
+
+  <body
+    style="-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;background-color:#cecece;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;margin:0;padding:0"
+  >
+    <style></style>
+    <div
+      class="content"
+      style="box-sizing:border-box;display:block;margin:0 auto;max-width:580px;padding:10px;position:relative;top:80px"
+    >
+      {{!-- <div style="text-align:center">
+        <img src="assets/logo-black.svg" style="width: 100px;" />
+      </div> --}}
+      <div
+        class="main"
+        style="background:#fff;border-radius:3px;width:100%; padding-bottom: 40px;"
+      >
+        <div
+          class="wrapper"
+          style="box-sizing:border-box;padding:20px; line-height: 21px;text-align: center;"
+        >
+          <p style="font-size:1.5rem;word-spacing:.9px;font-weight: 500;">Hello there!</p>
+          <p style="font-weight: 500">Congratulations, you have successfully created your unique payment link for the 1dollar campaign.</p>
+          <div>
+            <div style="text-align: center;padding: 10px;">
+              <p>You can copy and share your unique link below to others to use to make payments: </p>
+              <p
+                style="color:#dc2f02;font-family:inherit;font-size:0.875rem;text-decoration: none;"
+              >
+                {{content.uniqueLink}}
+              </p>
+            </div>
+            <p>
+                Please use the button below to login to see donations made using your link.
+            </p>
+            <div style="text-align: center;padding-top: 10px;">
+              <button
+                style="width:10vw;height:35px;border-radius:5px;background-color:#dc2f02;border:none;outline:0"
+              ><a
+                  href={{content.loginLink}}
+                  style="color:#fff;font-family:inherit;font-size:0.875rem;text-decoration: none;width:100%;"
+                >
+                  Login
+                </a>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="footer"
+      style="clear:both;text-align:center;width:100%; line-height: 4px; padding-bottom: 30px;"
+    >
+      <p
+        style="color:#4B4B4B;font-size:0.75rem;text-align:center;word-spacing:.9px"
+      >&copy; {{year}} 1Dollar</p>
+      {{!-- <p
+        style="color:#4B4B4B;font-size:0.7rem;text-align:center;word-spacing:.9px"
+      >Yaarnbox Max is a data research platform by Pierrine Consulting</p> --}}
+      <p style="color:#4B4B4B;font-size:0.75rem">Privacy Policy | Terms | Help</p>
+    </footer>
+  </body>
+
+</html>
